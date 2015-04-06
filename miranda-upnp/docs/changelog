@@ -1,0 +1,35 @@
+2012-12-31	Craig Heffner	<heffnercj@gmail.com>
+
+	* Miranda v1.3 released.
+
+	* Added set max option to limit the number of detected UPnP hosts.
+
+	* Added full batch scripting support, to include the host send commands.
+
+	* Added example port mapping script, portmapper.sh.
+
+	* Fixed SOAP envelope schema bug, thanks to fparsons / Brian Lenihan.
+
+	* Fixed duplicate UDP binding bug on BSD systems, thanks to Brian Lenihan.
+
+2012-09-07	Craig Heffner	<heffnercj@gmail.com>
+
+	* Miranda v1.2 released.
+
+	* Added HTTP/1.0 support, thanks to Ferry Boender
+
+	* Added support for relative SCPDURL's, thanks to r-win.
+
+	* Added the -b command line option to support scripted miranda actions.
+
+	* Debug mode now displays raw SOAP requests.
+
+2009-02-19	Craig Heffner	<dev@sourcesec.com>
+	
+	* Miranda v1.1 released.
+	
+	* Bugfix in receive loop, thanks to Johannes Veser.
+
+2008-11-03	Craig Heffner	<dev@sourcesec.com>
+	
+	* Initial release of Miranda v1.0.
