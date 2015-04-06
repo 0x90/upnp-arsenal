@@ -1,0 +1,193 @@
+2009-05-19 17:49  dev
+
+	* MANIFEST.in: adjusting MANIFEST.in to include win32 build files
+
+2009-05-19 17:47  dev
+
+	* MANIFEST.in, misc, misc/inspector.xpm,
+	  misc/upnp-inspector.desktop: including desktop/menu icon and
+	  description - thx cjsmo
+
+2009-05-18 18:00  lightyear
+
+	* win32/inspector-icon.ico, win32/win32.nsi: add inspector icon to
+	  the installer
+
+2009-05-18 15:08  lightyear
+
+	* win32, win32/compile.py, win32/inspector_build.txt,
+	  win32/upnp-inspector.py, win32/win32.nsi: initial win32 installer
+	  files
+
+2009-05-18 13:15  dev
+
+	* upnp_inspector/mediarenderer.py: catch a non-existent 'SEEK'
+	  action - closes #221
+
+2009-05-18 13:08  dev
+
+	* upnp_inspector/extract.py: only ''hide'' extract-window, don't
+	  ''destroy'' it on close - closes #220
+
+2009-05-04 19:22  dev
+
+	* upnp_inspector/mediarenderer.py: * support for skipping backward
+	  and forward within the MediaRenderers track-list
+
+2009-04-29 18:44  dev
+
+	* upnp_inspector/base.py: new 'Rediscover Devices' menu
+	  item/action, closes #205
+
+2009-04-28 19:47  dev
+
+	* upnp_inspector/mediaserver.py: allow refresh - via right-click
+	  context menu - of a single container in the MediaServer Browse
+	  widget, closes #206
+
+2009-04-27 19:14  dev
+
+	* upnp_inspector/mediaserver.py: upon closing of the MediaServer
+	  Browse widget, clear the TreeView store and start with an
+	  unexpanded 'root'-container again, addresses #206
+
+2009-04-27 18:53  dev
+
+	* UPnP_Inspector.egg-info/requires.txt,
+	  upnp_inspector/mediaserver.py: adding some dlna-playcontainer://
+	  fu to the Inspector
+
+2009-04-14 19:53  dev
+
+	* upnp_inspector/mediarenderer.py: using the proper
+	  CurrentTransportActions values
+
+2009-04-14 19:48  dev
+
+	* setup.py, upnp_inspector/mediaserver.py: correcting the way
+	  DIDL-Lite fragments are displayed in the Browser details
+
+2009-03-09 10:10  dev
+
+	* upnp_inspector/mediarenderer.py: remove some boring prints
+
+2009-03-08 17:40  dev
+
+	* UPnP_Inspector.egg-info/SOURCES.txt,
+	  upnp_inspector/icons/audio-volume-high.png,
+	  upnp_inspector/icons/audio-volume-low.png,
+	  upnp_inspector/icons/audio-volume-medium.png,
+	  upnp_inspector/icons/audio-volume-muted.png,
+	  upnp_inspector/mediarenderer.py, upnp_inspector/mediaserver.py:
+	  more work on the MediaRenderer control widget
+	  
+	  * volume adjustment and muting
+	  * seeking, if the MediaRenderer supports it
+	  * direct drag-and-drop support from the MediaServer Browse widget
+	  into the MediaRenderer widget (only single items and no
+	  containers for now)
+
+2009-03-02 18:23  dev
+
+	* UPnP_Inspector.egg-info/SOURCES.txt, upnp_inspector/about.py,
+	  upnp_inspector/devices.py, upnp_inspector/icons/blankalbum.png,
+	  upnp_inspector/icons/media-playback-pause.png,
+	  upnp_inspector/icons/media-playback-start.png,
+	  upnp_inspector/icons/media-playback-stop.png,
+	  upnp_inspector/icons/media-seek-backward.png,
+	  upnp_inspector/icons/media-seek-forward.png,
+	  upnp_inspector/icons/media-skip-backward.png,
+	  upnp_inspector/icons/media-skip-forward.png,
+	  upnp_inspector/mediarenderer.py, upnp_inspector/mediaserver.py:
+	  new MediaRenderer control widget
+
+2009-02-24 17:32  dev
+
+	* UPnP_Inspector.egg-info/PKG-INFO,
+	  UPnP_Inspector.egg-info/SOURCES.txt,
+	  UPnP_Inspector.egg-info/requires.txt, upnp_inspector/__init__.py:
+	  bump version number to 0.2.1
+
+2009-02-24 15:45  dev
+
+	* ChangeLog, NEWS, setup.py, upnp_inspector/__init__.py: New in
+	  this 0.2.0 - Good Morning, Starshine - release:
+	  
+	  * a log-window for SSDP messages
+	  * more information (DLNA class and capabilites, icons) in the
+	  devices details-window
+	  * the MediaServer browse-window now reacts on ContainerUpdateIds
+	  changes
+
+2009-02-05 21:56  dev
+
+	* upnp_inspector/log.py: yeah - missing file, as usual
+
+2009-02-05 16:14  dev
+
+	* UPnP_Inspector.egg-info/PKG-INFO, upnp_inspector/__init__.py,
+	  upnp_inspector/details.py: display information about device icons
+	  in the details window
+
+2009-01-30 20:02  dev
+
+	* upnp_inspector/mediaserver.py: react on ContainerUpdateIds
+	  changes
+
+2009-01-24 18:56  dev
+
+	* README, UPnP_Inspector.egg-info/PKG-INFO,
+	  UPnP_Inspector.egg-info/SOURCES.txt,
+	  UPnP_Inspector.egg-info/requires.txt, setup.py,
+	  upnp_inspector/__init__.py, upnp_inspector/about.py,
+	  upnp_inspector/base.py, upnp_inspector/mediaserver.py: new log
+	  window for SSDP
+
+2009-01-19 21:36  micxer
+
+	* upnp_inspector/extract.py: No more error when SMTP library is not
+	  available and mail checkbox isn't shown
+	  No more error when closing the dialog, just hide it to make it
+	  reusable by devices.py:325
+
+2009-01-05 15:35  dev
+
+	* upnp_inspector/devices.py: the lost events
+
+2009-01-04 20:10  dev
+
+	* dist: cleanup
+
+2009-01-04 20:08  dev
+
+	* ., LICENCE, MANIFEST.in, README, UPnP_Inspector.egg-info,
+	  UPnP_Inspector.egg-info/PKG-INFO,
+	  UPnP_Inspector.egg-info/SOURCES.txt,
+	  UPnP_Inspector.egg-info/dependency_links.txt,
+	  UPnP_Inspector.egg-info/entry_points.txt,
+	  UPnP_Inspector.egg-info/requires.txt,
+	  UPnP_Inspector.egg-info/top_level.txt, bin, bin/upnp-inspector,
+	  dist, dist/UPnP-Inspector-0.1.6.tar.gz, setup.py, upnp_inspector,
+	  upnp_inspector/__init__.py, upnp_inspector/about.py,
+	  upnp_inspector/base.py, upnp_inspector/details.py,
+	  upnp_inspector/devices.py, upnp_inspector/events.py,
+	  upnp_inspector/extract.py, upnp_inspector/icons,
+	  upnp_inspector/icons/audio-x-generic.png,
+	  upnp_inspector/icons/camera-web.png,
+	  upnp_inspector/icons/folder.png,
+	  upnp_inspector/icons/image-x-generic.png,
+	  upnp_inspector/icons/inspector-icon.png,
+	  upnp_inspector/icons/inspector-logo.png,
+	  upnp_inspector/icons/media-renderer.png,
+	  upnp_inspector/icons/network-light.png,
+	  upnp_inspector/icons/network-server.png,
+	  upnp_inspector/icons/printer.png,
+	  upnp_inspector/icons/upnp-action-arg-in.png,
+	  upnp_inspector/icons/upnp-action-arg-out.png,
+	  upnp_inspector/icons/upnp-action.png,
+	  upnp_inspector/icons/upnp-device.png,
+	  upnp_inspector/icons/upnp-service.png,
+	  upnp_inspector/icons/upnp-state-variable.png,
+	  upnp_inspector/icons/video-x-generic.png,
+	  upnp_inspector/mediaserver.py: The Inspector arrives
+

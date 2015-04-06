@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/coherence-project/UPnP-Inspector
+	branch = develop
+	commit = 5cba5e5a8768b5268ac040b46007f9bbeedec9fc
+	parent = fb0885de46588fe8eb14e7f9c2295fd9acc96958
+	cmdver = 0.2.1

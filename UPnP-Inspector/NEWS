@@ -1,0 +1,41 @@
+0.3 - 2014-xx-xx
+
+ * A double-click on an entry in the device list now starts the
+   default action. So e.g. for a media server "browsing" is now opened
+   directly.
+ * Add shortcut for "Quit"
+ * Make cursor right/left expand/collapse device tree view.
+ * Add a basic InternetGatewayDevice control widget.
+ * Display image in the MediaRenderer control when used with an
+   PictureFrame or an image MediaRenderer (only the first url, no
+   search for a thumbnail yet)
+ * Add support for relative-time mode seeking.
+ * Show embedded devices and their services, too.
+ * Don't switch "play" button to pause if the MediaRenderer doesn't
+   support that action
+ * Report the save-path in a dialog after extracting the device info.
+ * Enable copy and paste for entries in the Event-Window.
+ * Code moved to github.
+ * Fixed several bugs and cleaned up code.
+
+0.2.2 - Let the Sunshine In - 20090519
+
+ * a control-window for UPnP A/V MediaRenderers
+ * Drag 'n Drop functionality from the MediaServer Browse window
+   to the MediaRenderer control
+ * a 'Rediscover Devices' menu item
+ * a 'Refreshing Container' context menu item and an overall refresh
+   upon closing the MediaServer Browse window
+ * support for dlna-playcontainer URIs
+ * displaying all elements from a DIDLLite fragment
+
+0.2.0 - Good Morning, Starshine - 20090224
+
+ * a log-window for SSDP messages
+ * more information (DLNA class and capabilites, icons)
+   in the devices details-window
+ * the MediaServer browse-window now reacts on ContainerUpdateIds changes
+
+0.1.7 - 20090105
+
+ * first public release
