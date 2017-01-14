@@ -1,0 +1,15 @@
+[submodule "upnp-scripts"]
+	path = upnp-scripts
+	url = https://github.com/viris/upnp-scripts
+[submodule "Upnp-Exploiter"]
+	path = Upnp-Exploiter
+	url = https://github.com/dc414/Upnp-Exploiter
+[submodule "UPnP-Pentest-Toolkit"]
+	path = UPnP-Pentest-Toolkit
+	url = https://github.com/nccgroup/UPnP-Pentest-Toolkit
+[submodule "miranda-upnp"]
+	path = miranda-upnp
+	url = https://github.com/0x90/miranda-upnp
+[submodule "ufuzz"]
+	path = ufuzz
+	url = https://github.com/phikshun/ufuzz
