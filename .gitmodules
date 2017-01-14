@@ -16,3 +16,15 @@
 [submodule "UPnP-Inspector"]
 	path = UPnP-Inspector
 	url = https://github.com/coherence-project/UPnP-Inspector
+[submodule "upnp_info"]
+	path = upnp_info
+	url = https://github.com/tenable/upnp_info
+[submodule "upnpload"]
+	path = upnpload
+	url = https://github.com/caruccio/upnpload
+[submodule "simpletr64"]
+	path = simpletr64
+	url = https://github.com/bpannier/simpletr64
+[submodule "UPnP-Hack"]
+	path = UPnP-Hack
+	url = https://github.com/dhishan/UPnP-Hack
