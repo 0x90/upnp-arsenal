@@ -1,3 +1,0 @@
-recursive-exclude debian *
-recursive-include misc *
-recursive-include win32 *

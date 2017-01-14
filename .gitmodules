@@ -13,3 +13,6 @@
 [submodule "ufuzz"]
 	path = ufuzz
 	url = https://github.com/phikshun/ufuzz
+[submodule "UPnP-Inspector"]
+	path = UPnP-Inspector
+	url = https://github.com/coherence-project/UPnP-Inspector
